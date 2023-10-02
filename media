@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int vetor[10];
+  int i;
+  
+    cout << "\n--- Abaixo, informe dez números ---\n";
+    cout << "Por favor, não repita números!\n ";
+  
+    for (i = 0; i < 10; i++) {  
+    cout << "\nInforme um número: ";
+    cin >> vetor[i];
+    }
+    
+    for (i = 0; i < 10; i++) {
+    cout << "\nnúmero informado: " << vetor[i] << endl;
+  }
+  
+    for (i = 0; i < 10; i++) {
+      if (vetor[i] % 2 == 0) {
+        cout << "\nNúmero par: " << vetor[i] << endl;
+      }
+        
+      if(vetor[i] % 2 == 1) {   
+        cout << "\nNúmero impar: " << vetor[i] << endl;
+}
+  }
+}
+
